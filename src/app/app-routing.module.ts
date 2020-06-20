@@ -7,7 +7,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/tabs/tabs.module').then((m) => m.TabsPageModule),
   },
+  // {
+  //   path: 'agregar',
+  //   loadChildren: () =>
+  //     import('./pages/agregar/agregar.module').then((m) => m.AgregarPageModule),
+  // },
 ];
+
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
